@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --main-bg-color: #f6f5f6;
+
+  /* Primary */
+
+  --purple-50: hsl(260, 100%, 95%);
+  --purple-300: hsl(264, 82%, 80%);
+  --purple-500: hsl(263, 55%, 52%);
+
+  /* Neutral */
+
+  --white: hsl(0, 0%, 100%);
+  --grey-100: hsl(214, 17%, 92%);
+  --grey-200: hsl(0, 0%, 81%);
+  --grey-300: #a3aab4;
+  --grey-400: hsl(224, 10%, 45%);
+  --grey-500: hsl(217, 19%, 35%);
+  --dark-blue: hsl(219, 29%, 14%);
+  --black: hsl(0, 0%, 7%);
+
+  --font-family: 'Barlow', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--main-bg-color);
+
+  font-family: var(--font-family);
+}
+
+main {
+  padding: 4rem 2rem;
+  flex-grow: 1;
+}
+
+/* TEXT PRESETS */
+
+.text-preset-1,
+.text-preset-2,
+.text-preset-3,
+.text-preset-4 {
+  font-stretch: semi-condensed;
+  letter-spacing: 0;
+}
+
+.text-preset-2,
+.text-preset-3 {
+  font-size: 0.813rem;
+  font-weight: 500;
+}
+
+.text-preset-2,
+.text-preset-4 {
+  line-height: 110%;
+}
+
+.text-preset-1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.text-preset-3 {
+  line-height: 140%;
+}
+
+.text-preset-4 {
+  font-size: 0.688rem;
+}
+
+.cards-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.card {
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  border-radius: 0.5rem;
+}
+
+.card-3,
+.card-5 {
+  background-color: var(--white);
+}
+
+.card-1 {
+  color: white;
+  background-color: var(--purple-500);
+}
+
+.card-1 .review,
+.card-1 .profile .status {
+  color: var(--purple-50);
+}
+
+.card-2 {
+  color: white;
+  background-color: var(--grey-500);
+}
+
+.card-2 .status,
+.card-5 .status {
+  color: var(--grey-300);
+}
+
+.card-2 .review {
+  color: var(--grey-100);
+}
+
+.card-3 {
+  color: var(--grey-500);
+}
+
+.card-3 .profile .status,
+.card-3 .review {
+  color: var(--grey-400);
+}
+
+.card-4 {
+  color: white;
+  background-color: var(--dark-blue);
+}
+
+.card-4 .heading {
+  color: var(--grey-200);
+}
+
+.card-4 .review {
+  color: var(--grey-100);
+}
+
+.card-5 {
+  color: var(--grey-400);
+}
+
+.card-5 .name,
+.card-5 .heading {
+  color: var(--grey-500);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.063rem;
+}
+
+/* using class */
+.profile .avatar-banner.story {
+  border: 2px solid var(--purple-300);
+}
+
+/* using pseudo-class - every 3rd element from the 1st (1, 4, 7, 10) */
+/* .card:nth-child(3n + 1) .avatar-banner {
+  border: 2px solid var(--purple-300);
+} */
+
+.avatar-banner {
+  max-width: 28px;
+  max-height: 28px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.avatar-banner img {
+  width: 100%;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
