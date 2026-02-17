@@ -96,6 +96,8 @@ main {
   gap: 1rem;
 
   border-radius: 0.5rem;
+
+  box-shadow: 35px 55px 25px var(--grey-200);
 }
 
 .card-3,
@@ -206,6 +208,8 @@ footer .attribution a {
   }
 
   .cards-container {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas:
       'long-1 long-1 short-1 high'
       'short-2 long-2 long-2 high';
