@@ -33,6 +33,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   background-color: var(--main-bg-color);
 
@@ -41,6 +42,9 @@ body {
 
 main {
   padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
 }
 
@@ -188,4 +192,41 @@ footer .attribution {
 
 footer .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 540px) and (max-width: 1024px) {
+  .card.long {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1025px) {
+  main {
+    max-width: 1440px;
+  }
+
+  .cards-container {
+    grid-template-areas:
+      'long-1 long-1 short-1 high'
+      'short-2 long-2 long-2 high';
+  }
+
+  .card.short-1 {
+    grid-area: short-1;
+  }
+
+  .card.short-2 {
+    grid-area: short-2;
+  }
+
+  .card.long-1 {
+    grid-area: long-1;
+  }
+  .card.long-2 {
+    grid-area: long-2;
+  }
+
+  .card.high {
+    grid-area: high;
+  }
 }
