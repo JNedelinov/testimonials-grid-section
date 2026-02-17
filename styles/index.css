@@ -98,6 +98,8 @@ main {
   border-radius: 0.5rem;
 
   box-shadow: 35px 55px 25px var(--grey-200);
+
+  position: relative;
 }
 
 .card-3,
@@ -108,6 +110,10 @@ main {
 .card-1 {
   color: white;
   background-color: var(--purple-500);
+}
+
+.card-1 .heading {
+  z-index: 99;
 }
 
 .card-1 .review,
@@ -160,6 +166,19 @@ main {
   color: var(--grey-500);
 }
 
+.quotes {
+  display: none;
+
+  max-width: 104px;
+  max-height: 102px;
+
+  position: absolute;
+  top: 0;
+  right: 10%;
+
+  color: var(--purple-300);
+}
+
 .profile {
   display: flex;
   align-items: center;
@@ -197,6 +216,10 @@ footer .attribution a {
 }
 
 @media (min-width: 540px) and (max-width: 1024px) {
+  .quotes {
+    display: block;
+  }
+
   .card.long {
     grid-column: span 2;
   }
@@ -213,6 +236,10 @@ footer .attribution a {
     grid-template-areas:
       'long-1 long-1 short-1 high'
       'short-2 long-2 long-2 high';
+  }
+
+  .quotes {
+    display: block;
   }
 
   .card.short-1 {
