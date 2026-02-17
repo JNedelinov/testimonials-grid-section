@@ -30,7 +30,7 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,7 +215,7 @@ footer .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 33.75rem) and (max-width: 64rem) {
+@media (min-width: 540px) and (max-width: 1024px) {
   .quotes {
     display: block;
   }
@@ -225,7 +225,7 @@ footer .attribution a {
   }
 }
 
-@media (min-width: 64.063rem) {
+@media (min-width: 1025px) {
   main {
     max-width: 90rem;
   }
