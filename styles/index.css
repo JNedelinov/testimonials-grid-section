@@ -97,7 +97,7 @@ main {
 
   border-radius: 0.5rem;
 
-  box-shadow: 35px 55px 25px var(--grey-200);
+  box-shadow: 2.188rem 3.438rem 1.563rem var(--grey-200);
 
   position: relative;
 }
@@ -169,8 +169,8 @@ main {
 .quotes {
   display: none;
 
-  max-width: 104px;
-  max-height: 102px;
+  max-width: 6.5rem;
+  max-height: 6.375rem;
 
   position: absolute;
   top: 0;
@@ -187,17 +187,17 @@ main {
 
 /* using class */
 .profile .avatar-banner.story {
-  border: 2px solid var(--purple-300);
+  border: 0.125rem solid var(--purple-300);
 }
 
 /* using pseudo-class - every 3rd element from the 1st (1, 4, 7, 10) */
 /* .card:nth-child(3n + 1) .avatar-banner {
-  border: 2px solid var(--purple-300);
+  border: 0.125rem solid var(--purple-300);
 } */
 
 .avatar-banner {
-  max-width: 28px;
-  max-height: 28px;
+  max-width: 1.75rem;
+  max-height: 1.75rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -207,7 +207,7 @@ main {
 }
 
 footer .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   text-align: center;
 }
 
@@ -215,7 +215,7 @@ footer .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media (min-width: 540px) and (max-width: 1024px) {
+@media (min-width: 33.75rem) and (max-width: 64rem) {
   .quotes {
     display: block;
   }
@@ -225,9 +225,9 @@ footer .attribution a {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 64.063rem) {
   main {
-    max-width: 1440px;
+    max-width: 90rem;
   }
 
   .cards-container {
